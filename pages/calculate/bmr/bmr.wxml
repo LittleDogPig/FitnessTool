@@ -1,0 +1,67 @@
+<!--index.wxml-->
+<view class='bmr_bg'>
+<view class='bmr_title'>
+<text >BMR(Basel Metabolic Rate)人维持基本生理机能的最低热量值，以下根据美国运动协会给出的公式计算</text>
+</view>
+  <view class="page-body">
+      <view class="page-section">
+        <view class="bmr_sexGroup">
+          <!-- <radio-group bindchange="radioChange">
+          <radio value="0" checked="true"/>男
+          <radio value="1" />女
+           </radio-group> -->
+           <view class="table">
+               <view class="tr">
+              <view class="td"> <text >性    别</text></view>
+               <view class="td">
+               <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class='bmr_input'>{{array[index]}}</view>
+              </picker>
+              </view>      
+               <view class="td"> <text >sex</text></view>
+             </view>
+
+             <view class="tr">
+              <view class="td"> <text >年    龄</text></view>
+               <view class="td"><input class='bmr_input'  bindinput ="ageInput" auto-focus /></view>      
+               <view class="td"> <text >岁</text></view>
+             </view>
+  
+           <view class="tr">
+          <view class="td"><text >身    高</text></view>
+            <view class="td"><input class='bmr_input'  bindinput ="heightInput"  /></view>
+<view class="td"><text >cm</text></view>
+          </view>
+         
+           <view class="tr">
+              <view class="td"><text >体    重</text></view>
+              <view class="td"><input class='bmr_input'  bindinput ="weightInput" /></view>
+              <view class="td"><text >kg</text></view>
+          </view>
+
+           <view class="tr">
+              <view class="td"> <text >活动系数</text></view>
+               <view class="td">
+               <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+              <view class='bmr_input'>{{array2[index2]}}</view>
+              </picker>
+              </view>      
+               <view class="td"> <text >sex</text></view>
+             </view>
+           </view>
+          <view>
+            <button type="primary" bindtap="caclulate">计算</button>
+          </view>
+          <view class='bmr_title'>根据Harris Benedict Formula乘以周活动系数</view>
+<!-- 
+<button type="primary" class="mini-btn" bindtap="time1" size='mini'>几乎不动</button>
+<button type="primary" class="mini-btn" bindtap="time2" size='mini'>1-3次运动</button>
+<button type="primary" class="mini-btn" bindtap="time3" size='mini'>3-5次运动</button>
+<button type="primary" class="mini-btn" bindtap="time4" size='mini'>6-7次运动</button>
+<button type="primary" class="mini-btn" bindtap="time5" size='mini'>专业运动</button> -->
+          <view class="bmr_resule">你的BMR为--{{ bmrDTO }}大卡</view>
+          
+      </view>
+    </view>
+</view>
+</view>

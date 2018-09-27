@@ -1,0 +1,10 @@
+<!--pages/calculate/calculate.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="btn-area">
+      <button id="bmr" bindtap="bmr" type="primary">BMR计算 </button>
+    </view>
+  </view>
+  
+</view>
+

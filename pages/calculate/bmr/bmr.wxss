@@ -1,0 +1,64 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.page-section{
+  margin-bottom: 20rpx;
+}
+.mini-btn{
+  margin-right: 5rpx;
+}
+.bmr_input{
+text-align:left
+}
+.bmr_title{
+  justify-content: center;
+  margin:30rpx;
+  padding: 10rpx;
+}
+.bmr_sexGroup{
+  justify-content: center;
+}
+.bmr_resule{
+  text-align: center;
+  margin-top: 5rpx;
+  background: gold;
+  font-size: 64rpx
+}
+.table {
+  border: 0px solid darkgray;
+}
+.tr {
+  display: flex;
+  width: 100%;
+   justify-content: center; 
+  height: 3rem;
+   align-items: center; 
+  /* border: 1px solid darkgray; */
+}
+.td {
+    width:40%;
+    /* justify-content: center; */
+    background-color: #FFFFFF; 
+    text-align: center;
+}
+/* .bmr_bg{
+  background: bisque
+} */
