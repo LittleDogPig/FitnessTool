@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.1.0",
 	"appid": "wx4829966f023c352b",
-	"projectname": "dog",
+	"projectname": "FitnessTool",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
