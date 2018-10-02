@@ -7,5 +7,10 @@ Page({
     wx.navigateTo({
       url: '../calculate/bmr/bmr',
     })
+  },
+  distribution: function (e) {
+    wx.navigateTo({
+      url: '../calculate/distribution/distribution',
+    })
   }
 })

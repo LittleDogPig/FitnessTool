@@ -1,0 +1,61 @@
+/* pages/calculate/distribution/distribution.wxss */
+.box{
+  /* margin-left: 100rpx;
+  margin-right: 100rpx; */
+  margin: 100rpx;
+}
+.small{
+  display: flex;
+  /* justify-content:flex-start;  */
+   
+}
+/* .ss{
+  display: flex;
+ width: 500rpx;
+  flex-direction: row;
+  background-color: white;
+} */
+/* .input{
+  width: 80rpx;
+} */
+.ct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.placeholder {
+  display: flex;
+  align-items:flex-end;
+}
+.button{
+ width:100%; 
+}
+.a1Input{
+  width: 100rpx;
+}
+.item{
+  font-size: 55rpx;
+}
+.size{
+  width: 155rpx;
+}
+.size2{
+  margin-right: 30rpx;
+  width: 45rpx;
+}
+.size3{
+  width: 130rpx;
+}
+.size4{
+  width: 70rpx;
+}
+.inputXSS{
+ text-align:center;
+}
+.inputTs{
+  flex-shrink:1.5;
+}
+.dsView{
+  margin-top: 40rpx;
+  background: bisque;
+}
