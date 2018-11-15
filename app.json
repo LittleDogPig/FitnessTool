@@ -3,7 +3,8 @@
     "pages/calculate/calculate",
     "pages/calculate/bmr/bmr",
     "pages/tools/time/time",
-    "pages/tools/tools"
+    "pages/tools/tools",
+    "pages/calculate/distribution/distribution"
   ],
   "window": {
     "backgroundTextStyle": "black",

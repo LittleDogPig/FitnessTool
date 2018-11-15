@@ -1,0 +1,150 @@
+<!--pages/calculate/distribution/distribution.wxml-->
+<view class="box">
+  <view class = "small">
+    <view class="item size"  >热量</view>
+    <text class="item size2">：</text>
+    <view class="item size" ><input  maxlength='4' placeholder='2048' bindinput ="a1Input"  /></view>
+    <text class="item size2">　</text>
+    <view class="item size" >大卡</view>
+    <!-- 空白字符（　）-->
+  </view>
+  <view class = "small">
+  
+    <text  class="item size" >碳水</text>
+    <text class="item size2">：</text>
+    <text  class="item size">蛋白</text>
+    <text class="item size2">：</text>
+    <text  class="item size">脂肪</text>
+  </view>
+  <view class = "small">
+      <view class="item size" ><input class='inputXSS' maxlength='3' placeholder='1' bindinput ="b1Input"  /></view>
+     <text class='size2 item'>：</text>
+      <view class="item size" ><input class='inputXSS' maxlength='3' placeholder='1' bindinput ="b2Input"  /></view>
+     <text class='size2 item'>：</text>
+     <view class="item size" ><input class='inputXSS' maxlength='3' placeholder='1' bindinput ="b3Input"  /></view>
+  </view>
+  <view class = "small">
+     <text  class="item size" >早餐</text>
+    <text class="item size2">：</text>
+    <text  class="item size">午餐</text>
+    <text class="item size2">：</text>
+    <text  class="item size">晚餐</text>
+  </view>
+  <view class = "small">
+    <view class="item size" ><input class='inputXSS' maxlength='3' placeholder='1' bindinput ="c1Input"  /></view>
+     <text class='size2 item'>：</text>
+      <view class="item size" ><input class='inputXSS' maxlength='3' placeholder='1' bindinput ="c2Input"  /></view>
+     <text class='size2 item'>：</text>
+     <view class="item size" ><input class='inputXSS' maxlength='3' placeholder='1' bindinput ="c3Input"  /></view>
+    </view>
+  
+  <view >
+        <button class='button'  type="primary" bindtap="caclulate">计算</button>
+  </view>
+  <view class='dsView'>
+  <view class = "small">
+    <view class="item size"  >早餐</view>
+    <text class="item size2">：</text>
+    <view class="item size" >{{ morning }}</view>
+    <text class="item size2">　</text>
+    <view class="item size" >大卡</view>
+    <!-- 空白字符（　）-->
+  </view>
+<view class = "small">
+    <view class="item size"  >碳水</view>
+    <text class="item size2">：</text>
+    <view class="item size" >{{ morningC }}</view>
+    <text class="item size2">　</text>
+    <view class="item size" >g</view>
+    <!-- 空白字符（　）-->
+  </view>
+  <view class = "small">
+    <view class="item size"  >蛋白</view>
+    <text class="item size2">：</text>
+    <view class="item size" >{{ morningP }}</view>
+    <text class="item size2">　</text>
+    <view class="item size" >g</view>
+    <!-- 空白字符（　）-->
+  </view>
+  <view class = "small">
+    <view class="item size"  >脂肪</view>
+    <text class="item size2">：</text>
+    <view class="item size" >{{ morningZ }}</view>
+    <text class="item size2">　</text>
+    <view class="item size" >g</view>
+    <!-- 空白字符（　）-->
+  </view>
+  </view>
+
+
+   <view class='dsView'>
+  <view class = "small">
+    <view class="item size"  >午餐</view>
+    <text class="item size2">：</text>
+    <view class="item size" >{{ noon }}</view>
+    <text class="item size2">　</text>
+    <view class="item size" >大卡</view>
+    <!-- 空白字符（　）-->
+  </view>
+<view class = "small">
+    <view class="item size"  >碳水</view>
+    <text class="item size2">：</text>
+    <view class="item size" >{{ noonC }}</view>
+    <text class="item size2">　</text>
+    <view class="item size" >g</view>
+    <!-- 空白字符（　）-->
+  </view>
+  <view class = "small">
+    <view class="item size"  >蛋白</view>
+    <text class="item size2">：</text>
+    <view class="item size" >{{ noonP }}</view>
+    <text class="item size2">　</text>
+    <view class="item size" >g</view>
+    <!-- 空白字符（　）-->
+  </view>
+  <view class = "small">
+    <view class="item size"  >脂肪</view>
+    <text class="item size2">：</text>
+    <view class="item size" >{{ noonZ }}</view>
+    <text class="item size2">　</text>
+    <view class="item size" >g</view>
+    <!-- 空白字符（　）-->
+  </view>
+  </view>
+
+   <view class='dsView'>
+  <view class = "small">
+    <view class="item size"  >晚餐</view>
+    <text class="item size2">：</text>
+    <view class="item size" >{{ evening }}</view>
+    <text class="item size2">　</text>
+    <view class="item size" >大卡</view>
+    <!-- 空白字符（　）-->
+  </view>
+<view class = "small">
+    <view class="item size"  >碳水</view>
+    <text class="item size2">：</text>
+    <view class="item size" >{{ eveningC }}</view>
+    <text class="item size2">　</text>
+    <view class="item size" >g</view>
+    <!-- 空白字符（　）-->
+  </view>
+  <view class = "small">
+    <view class="item size"  >蛋白</view>
+    <text class="item size2">：</text>
+    <view class="item size" >{{ eveningP }}</view>
+    <text class="item size2">　</text>
+    <view class="item size" >g</view>
+    <!-- 空白字符（　）-->
+  </view>
+  <view class = "small">
+    <view class="item size"  >脂肪</view>
+    <text class="item size2">：</text>
+    <view class="item size" >{{ eveningZ }}</view>
+    <text class="item size2">　</text>
+    <view class="item size" >g</view>
+    <!-- 空白字符（　）-->
+  </view>
+  </view>
+
+</view>

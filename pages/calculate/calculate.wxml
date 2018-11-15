@@ -4,6 +4,9 @@
     <view class="btn-area">
       <button id="bmr" bindtap="bmr" type="primary">BMR计算 </button>
     </view>
+    <view class="btn-area">
+      <button id="distribution" bindtap="distribution" type="primary">热量分配 </button>
+    </view>
   </view>
   
 </view>
